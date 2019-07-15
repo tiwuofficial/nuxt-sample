@@ -1,9 +1,8 @@
 <template>
   <div class="container">
     <div>
-      <logo />
       <h1 class="title">
-        TIWU
+        About
       </h1>
       <h2 class="subtitle">
         My spectacular Nuxt.js project
@@ -19,16 +18,6 @@
     </div>
   </div>
 </template>
-
-<script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
-  }
-}
-</script>
 
 <style>
 .container {
