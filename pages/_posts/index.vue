@@ -3,23 +3,14 @@
     <div>
       <logo />
       <h1 class="title">
-        TIWU
+        Post
       </h1>
-      <h2 class="subtitle">
-        My spectacular Nuxt.js project
-      </h2>
       <div class="links">
         <nuxt-link to="/" class="button--green">
           Index
         </nuxt-link>
         <nuxt-link to="/about" class="button--grey">
           About
-        </nuxt-link>
-        <nuxt-link to="/users/1" class="button--grey">
-          User 1
-        </nuxt-link>
-        <nuxt-link to="/1" class="button--grey">
-          Post 1
         </nuxt-link>
       </div>
     </div>
