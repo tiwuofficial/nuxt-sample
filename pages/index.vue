@@ -9,11 +9,17 @@
         My spectacular Nuxt.js project
       </h2>
       <div class="links">
-        <nuxt-link to="/" class="button--green">
+        <span class="button--green" @click="increment">
+          Counter {{ count }}
+        </span>
+        <nuxt-link to="/" class="button--grey">
           Index
         </nuxt-link>
         <nuxt-link to="/about" class="button--grey">
           About
+        </nuxt-link>
+        <nuxt-link to="/todos" class="button--grey">
+          Todo
         </nuxt-link>
         <nuxt-link to="/users/1" class="button--grey">
           User 1
@@ -27,11 +33,22 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 import Logo from '~/components/Logo.vue'
 
 export default {
   components: {
     Logo
+  },
+  computed: {
+    count() {
+      return this.$store.state.counter
+    }
+  },
+  methods: {
+    ...mapMutations({
+      increment: 'increment'
+    })
   }
 }
 </script>
